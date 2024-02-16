@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Add this to your stylesheet or within a <style> tag */
+.transition {
+  transition: all 0.8s ease; /* Adjust the duration and timing function as needed */
+}
+
+
+body {
+  background-color: #ffffff ;
+}
+
+/* Theme Color */
+
+/* BACKGROUND */
+.bg-theme-dblue {
+  background-color: #003A6F !important;
+}
+
+.bg-theme-lblue {
+  background-color: #6EC5E9 !important;
+}
+
+.bg-theme-red {
+  background-color: #FF5959 !important;
+}
+
+.bg-theme-yellow {
+  background-color: #FFC56C !important;
+}
+
+.bg-theme-whitest {
+  background-color: #FDFEFE !important;
+}
+
+.active-bold {
+  font-weight: 600 !important;
+}
+/* TEXT */
+.txt-theme-dblue {
+  color: #003A6F !important;
+}
+
+.txt-theme-lblue {
+  color: #6EC5E9 !important;
+}
+
+.txt-theme-red {
+  color: #FF5959 !important;
+}
+
+.txt-theme-yellow {
+  color: #FFC56C !important;
+}
+
+.txt-theme-white {
+  color: #F0F3F4 !important;
+}
+
+.bg-green {
+  background-color: #2ECC71 !important;
+}
+
+.txt-green {
+  color: #2ECC71 !important;
+}
+
+
+.navigation {
+  background-color: #F4F6F7 ;
+}
+
+.navbar {
+  padding: 10px 80px;
+}
+
+.logo-text {
+  font-weight: 500;
+}
+
+#seal {
+  width: 50px;
+  padding-right: 6px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  display: flex!important;
+  flex-basis: auto;
+  align-content: flex-end;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.bg-theme-whitest {
+  border-top-left-radius: 15px; /* Set the border-radius for the top left corner */
+  border-bottom-left-radius: 15px; /* Set the border-radius for the bottom left corner */
+}
+
+.bg-theme-dblue {
+  border-top-right-radius: 15px; /* Set the border-radius for the top left corner */
+  border-bottom-right-radius: 15px; /* Set the border-radius for the bottom left corner */
+}
+
+.signup-container {
+  border-radius: 20px;
+}
+
+.sticky-sidebar {
+  top: 0;
+  height: calc(100vh - 100px); /* Adjusted to subtract the navbar height */
+  width: 25%;
+  padding: 15px;
+}
+
+.search-field {
+  padding-left: 24px;
+  width: 320px;
+}
+
+.sticky-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 104px;
+  z-index: 100; /* Add a z-index to ensure it appears above other elements */
+}
+
+.nav-link:hover {
+  background-color: #E5E7E9 ; /* Change this color as needed */
+  border-radius: 4px; /* Optional: Add rounded corners */
+}
+
+.main {
+  padding: 10px 80px;
+}
+
+.main ul .nav li a {
+  color: #5D6D7E;
+}
+
+.card-body .btn {
+  font-weight: 600;
+  color: #273746;
+  background-color: #FFC56C;
+}
+
+#status-label{
+  background-color: #6EC5E9;
+  color:#E5E7E9;
+  font-size: 16px;
+  border-bottom: none;
+}
+
+.nav-link.dropdown-toggle.text-dark img.user-image {
+  width: 40px; /* Adjust the width as needed */
+  border-radius: 50%; /* Add a border-radius for a circular image */
+  margin-right: 8px; /* Add some right margin for spacing */
+}
+
+.user-image {
+  width: 40px; /* Adjust the width as needed */
+  border-radius: 50%; /* Add a border-radius for a circular image */
+  margin-right: 8px; /* Add some right margin for spacing */
+}
+
+/* SIGN IN BUTTON*/
+.sign-in-btn {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 10px;
+  color: #725AC1;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #725AC1;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #725AC1;
+}
+
+.sign-in-btn:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+
+.sign-in-btn:active {
+  transform: scale(0.9);
+}
+
+/* SIGN IN BUTTON*/
+.sign-up-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #183153;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+}
+
+.sign-up-btn:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #ffd401;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+.sign-up-btn:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.sign-up-btn span {
+  text-align: center;
+  text-decoration: none;
+  padding: 0 6px;
+  width: 100%;
+  color: #fff;
+  font-weight: 500;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+h2, h4 {
+  color: #2C3E50;
+}
+
+.sign-up-btn:hover span {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+/* CALENDAR */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.event {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+
+/* INPUT FIELDS */
+.form__group {
+  position: relative;
+  padding: 20px 0 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+#half {
+  max-width: 42% !important;
+}
+
+#third {
+  max-width: 35% !important;
+}
+
+#fourth {
+  max-width: 15% !important;
+}
+
+.fourth {
+  padding-top: 25px;
+  font-weight: 500;
+  max-width: 15% !important;
+}
+
+#cut {
+  max-width: 96% !important;
+}
+
+/* Add this style to position the add proposal button */
+.add-proposal-button {
+    width: 220px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #9b9b9b;
+  pointer-events: none;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #116399, #38caef);
+  border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #38caef;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+.signup-banner {
+  background-color: #007bff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* BOOKMARK */
+
+
+/* Card Shadow Overlaying */
+.custom-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 270px; /* Adjust the height as needed */
+  color: white; /* Text color */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Adjust the alpha value for darkness */
+}
+
+.card-content {
+  position: relative;
+  z-index: 1; /* Place the content above the overlay */
+}
+
+
+.custom-notification {
+  color: #566573;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Profile Card*/
+.card3 {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  background: mediumturquoise;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.card3::before,
+.card3::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: lightblue;
+  transition: all 0.5s;
+}
+
+.card3::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.card3::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100%  0 15px;
+}
+
+.card3:hover::before,
+.card3:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.card3:hover:after {
+  content: "2";
+}
+
+/* CARD 4 */
+.card4 {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  background: #FF5959;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.card4::before,
+.card4::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: lightblue;
+  transition: all 0.5s;
+}
+
+.card4::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.card4::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100%  0 15px;
+}
+
+.card4:hover::before,
+.card4:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  transition: all 0.5s;
+}
+
+.card4:hover:after {
+  content: "1";
+}
+
+
+/* CARD 5 */
+.card5 {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  background: #FFC56C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.card5::before,
+.card5::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: lightblue;
+  transition: all 0.5s;
+}
+
+.card5::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.card5::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100%  0 15px;
+}
+
+.card5:hover::before,
+.card5:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.card5:hover:after {
+  content: "1";
+}
+
+footer {
+  background-color: #003A6F ;
+}
+
+
+footer .container {
+  padding: 30px 30px 8px 30px;
+}
+
+footer ul li a {
+  font-weight: 300;
+  color: #F4F6F7;
+  text-decoration: none;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #273746;
+}
+
+.table-row:hover {
+  background-color: #00a1c9;
+}
